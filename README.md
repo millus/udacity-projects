@@ -1,7 +1,7 @@
 # Udacity Projects
 
  ### Completed projects
- - Project Rubric (HTML/CSS)
+ - Build a portfolio site (HTML/CSS) (folder named: 1-Project-Rubric)
 
  ### Upcoming projects
  - Memory Game (Javascript)
