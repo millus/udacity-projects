@@ -1,9 +1,9 @@
-#Udacity Projects
+# Udacity Projects
 
- ##Completed projects
+ ### Completed projects
  - Project Rubric (HTML/CSS)
 
- ##Upcoming projects
+ ### Upcoming projects
  - Memory Game (Javascript)
  - Classic Arcade Game Clone (Javascript)
  - Feed Reader Testing (Testing)
