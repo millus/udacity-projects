@@ -1,0 +1,233 @@
+/*
+ * General
+ */
+ * {
+   box-sizing: border-box;
+ }
+
+h1,
+h3{
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+/*
+ * Header
+ */
+.header-container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 24px 12px 24px;
+}
+
+.header-title {
+  font-size: 1em;
+  margin: auto;
+  padding-right: 30px; /*The 30px padding is the size of the logo, making the title be in the center of the page.*/
+}
+
+.header-logo {
+  width: 30px;
+  height: 30px;
+}
+
+/*
+ * Content
+ */
+ .content-container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 750px;
+   margin: auto;
+ }
+
+ /*
+  * Hero
+  */
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 10px;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 10px;
+    order:2;
+  }
+
+  .hero-title {
+    margin: 0;
+    font-size: 1.4em;
+    max-width: 300px;
+  }
+
+  .hero-btn {
+    order: 2;
+    background-color: #FF6584;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.2);
+    font-size: 0.8em;
+    padding: 12px 24px;
+    text-decoration: none;
+  }
+
+  .hero-img {
+    width: 80%;
+    margin: auto;
+  }
+
+ /*
+  * Projects
+  */
+ .project-container {
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .project-header {
+   width: 100%;
+   margin: 24px;
+ }
+
+  /* Note: .project-link needs to cover the size of .project-item
+  to make the whole project item clickable */
+ .project-link {
+   width: 100%;
+   text-decoration: none;
+   color: #000;
+ }
+
+ .project-item {
+   background-color: #fff;
+   border: 2px solid #d7d7d7;
+   border-radius: 12px;
+   box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.2);
+   padding: 24px;
+   margin: 12px;
+   min-height: 370px;
+ }
+
+ .project-item:hover {
+   border: 2px solid #6c63ff;
+ }
+
+ .project-title {
+   margin: 4px;
+   min-height: 3em;
+ }
+
+ .project-img {
+   width: 100%;
+   min-height: 150px;
+ }
+
+ .project-description {
+   overflow: hidden;
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+ }
+
+ /*
+  * Footer
+  */
+  .footer-container {
+    width: 100%;
+    background-color: #2F2E41;
+    color: #fff;
+    padding: 12px;
+  }
+
+  .copyright {
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  /*
+   * Responsive
+   */
+    @media screen and (min-width: 625px) {
+      .project-link {
+        width: calc((100%-28px)/3);
+      }
+
+      .hero-left {
+        width: 40%;
+        padding: 20px;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: 1.9em;
+        max-width: 300px;
+      }
+
+      .hero-description {
+        max-width: 240px;
+      }
+
+      .hero-btn {
+        font-size: 0.8em;
+        padding: 12px 24px;
+      }
+
+      .hero-img {
+        width: 60%;
+        order: 3;
+      }
+    }
+
+    @media screen and (min-width: 476px) and (max-width: 625px) {
+      .hero-container {
+        margin: 12px;
+      }
+
+      .hero-left {
+        margin: auto;
+        text-align: center;
+      }
+
+      .hero-title {
+        margin: auto;
+      }
+
+      .hero-btn {
+        margin: auto;
+      }
+
+      .hero-img {
+        width: 60%;
+      }
+      
+      .project-container {
+        margin: auto;
+      }
+
+      .project-img {
+        max-height: 150px;
+      }
+
+      .project-item {
+        max-width: 220px;
+      }
+
+      .project-link {
+        max-width: 220px;
+      }
+    }
